@@ -19,26 +19,26 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: burlywood; padding-left: 0; padding-right: 0;">
             {% include 'header.html' %}
             <div class="row">
-                <div class="col-sm-3 col-md-3">
+                <div class="col-sm-3 col-md-3" style="padding-left: 0;">
                     <div class="card">
-                        <div class="card-header">
-                            <h3>Menu</h3>
+                        <div class="card-header" style="background-color: burlywood;">
+                            <h3 style="color:rgb(255, 255, 255)">Menu</h3>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body" style="background-color: burlywood; ">
                             <div class='list-group'>    
-                            <a href='/' class='list-group-item'>HOME</a>
-                            <a href='https://google.com/news' class='list-group-item'>即時新聞</a>
-                            <a href='https://www.youtube.com' class='list-group-item'>youtube</a>
+                            <a href='/' class='list-group-item' style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">HOME</a>
+                            <a href='https://google.com/news' class='list-group-item' style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">即時新聞</a>
+                            <a href='https://www.youtube.com' class='list-group-item' style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">youtube</a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-sm-9 col-sm-9">
-                <div class="card">
-                    <div class="card-header">
+                <div class="card" style="background-color: rgb(251, 223, 176); border:3px rgb(255, 255, 255) solid; margin: 7px; padding: 7px;">
+                    <div class="card-header" style="background-color: burlywood;">
                         {% block headmessage %} 
                         {% endblock %}
                     </div>
