@@ -15,6 +15,8 @@ def showpost(request,slug):
     else:
         return redirect("/")
     #select * from post where slug=%slug
+def member(request):
+    return render(request,'member.html')
 '''
 def homepage(request):
     posts = Post.objects.all()#select*from post
