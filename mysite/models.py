@@ -7,6 +7,7 @@ class Post(models.Model):
     body = models.TextField()
     pub_date = models.DateTimeField(auto_now_add=True)
     writer = models.CharField(max_length=200,default="YourDefaultValueHere")
+    intro = models.TextField(default="YourDefaultValueHere")
     
     
     class Meta:
