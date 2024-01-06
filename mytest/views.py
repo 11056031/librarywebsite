@@ -5,6 +5,9 @@ from mytest.forms import ContactForm, \
                         UserRegisterForm, \
                         LoginForm, \
                         ProfileForm
+from django.urls import reverse
+from django.contrib.auth import logout
+from django.shortcuts import redirect
 
 # Create your views here.
 def index(request):
@@ -152,3 +155,7 @@ def profile(request):
         message = "ERROR"
         print('出錯回首頁')
         redirect("/")
+
+def logout_view(request):
+    logout(request)
+    return redirect(reverse('login'))
