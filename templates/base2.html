@@ -32,6 +32,7 @@
                             <p style="background-color: rgb(201, 175, 160); border-width: 1px; color: white; margin-bottom: 0; padding-left: 16px; height: 40px; padding-top: 7.5px;">歡迎回來，{{ user.username }}！</p>
                             <a href="/" class="list-group-item" style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">HOME</a>
                             <a href="http://127.0.0.1:8000/member/" class="list-group-item" style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">組員名單</a>
+                            <a style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;" href="/book_list/" class="list-group-item">借還書系統</a>
                             <a href="https://library.ntub.edu.tw/wSite/mp" class="list-group-item" style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">北商圖書館</a>
                             <a href="{% url 'logout' %}" class="list-group-item" style="background-color: rgb(201, 175, 160); border-width: 1px; color: white;">登出</a>
                         {% else %}

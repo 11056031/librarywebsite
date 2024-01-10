@@ -19,6 +19,8 @@ from django.contrib import admin
 from django.urls import path,  reverse
 from mysite import views as mv
 from mytest import views as testv
+from mysite.views import book_list, borrow_book, return_book
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',mv.homepage,name="homepage"),
@@ -27,5 +29,8 @@ urlpatterns = [
     path('register/', testv.register),
     path('login/', testv.login, name='login'),
     path('logout/', testv.logout_view, name='logout'),
+    path('book_list/', book_list, name='book_list'),
+    path('borrow/<int:book_id>/', borrow_book, name='borrow_book'),
+    path('return/<int:book_id>/', return_book, name='return_book'),
 
 ]

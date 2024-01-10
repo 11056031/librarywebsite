@@ -14,6 +14,9 @@
         <p style="color: white;">
            {{ post.intro | truncatechars:40 }} 
         </p>
+        <p style="font-family: 微軟正黑體; font-size: 12pt; font-weight: bold; color: #FFF4C1; margin-left: 10px;">
+            {{post.formatted_is_borrow|safe}}
+        </p>
     </div>
     <div class='card-footer'  style='background-color:rgb(206, 162, 123)'>
         <p>
